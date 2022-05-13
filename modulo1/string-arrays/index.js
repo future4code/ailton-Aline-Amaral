@@ -54,8 +54,11 @@ let tarefaReal = tarefaRealizada - 1
 
 let tarefaReal2 = parseFloat(tarefaReal)
 
+<<<<<<< HEAD
+=======
 console.log(tarefaReal2)
 
+>>>>>>> 79392d094e1ef2732e367592f5380d6365decd7d
 let listaPendentes = listaDeTarefas.splice(tarefaReal)
 
 console.log(listaPendentes)

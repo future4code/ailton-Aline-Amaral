@@ -5,13 +5,13 @@
 
 // EXERCÍCIO 01
 function retornaTamanhoArray(array) {
-   array =[]
    return array.length
 }
 
 // EXERCÍCIO 02
 function retornaArrayInvertido(array) {
-  
+  return array.reverse()
+
 }
 
 // EXERCÍCIO 03

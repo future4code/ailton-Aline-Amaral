@@ -60,30 +60,24 @@ function retornaObjetoEntreDoisNumeros(num1, num2) {
     }
 }
 
-/* // EXERCÍCIO 08
+// EXERCÍCIO 08
 function retornaNPrimeirosPares(n) {
-  let tamanhoArray = array.length
-  array.length = n
-  for (n = 0; )
+
 }
- */
+
 // EXERCÍCIO 09
 function classificaTriangulo(ladoA, ladoB, ladoC) {
-  if (ladoA === ladoB && ladoB === ladoC) {
+  if (ladoA === ladoB && ladoB === ladoC && ladoA === ladoC) {
     return "Equilátero"
-  } else if (ladoA === ladoB && ladoB !== ladoC) {
-    return "Isósceles"
-  } else if (ladoA !== ladoB && ladoB === ladoC) {
-    return "Isósceles"
-  } else if (ladoA === ladoC && ladoB !== ladoC) {
-    return "Isósceles"
-} else {
-  return "Escaleno"}
+  } else if (ladoA !== ladoB && ladoB !== ladoC && ladoA !== ladoC) {
+    return "Escaleno"
+  } else {
+  return "Isósceles"}
 }
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
-  
+ 
 }
 
 // EXERCÍCIO 11

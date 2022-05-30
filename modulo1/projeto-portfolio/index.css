@@ -1,5 +1,5 @@
 * {
-    margin: 4px;
+    margin-right: 4px;
 }
 
 .navigator {
@@ -13,30 +13,29 @@
     color: rgb(0, 255, 0);
 }
 
-.head {
+main {
     display: flex;
-    width:auto;
-    font-size: 45px;
-    font-family: verdana;
     margin-bottom: 10px;
-    font-weight: bold;
     background-color: black;
-    border-radius: left 50px;
+    border-radius: 50vh;
+    flex-direction: row;
+    justify-content:right;
+    align-items: center;
 }
 
 .profilePic {
-    display: flexbox;
-    height: 30vh;
-    margin: 4vh;
+    width: 25%;
     border:solid rgb(0, 255, 0) 5px;
     border-radius: 50%;
 }
     
 .name {
-    text-align: center;
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 8vw;
     color: rgb(0, 255, 0);
-
 }
+
 body {
     display: block;
     color: #fff;
@@ -45,19 +44,12 @@ body {
 }
 
 .aboutMe {
-    display: block;
+    display: flex;
     margin-left: 4vw;
     margin-right: 4vw;
 }
 
-form {
-    margin: auto;
-    width: 50%;
-    display: block;
-    position: relative;
-    
 
-}
 
 .id {
     background-color: lightslategray;
@@ -73,6 +65,14 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 25%;
+    position: relative;
 }
 
 #button {

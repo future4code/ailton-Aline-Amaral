@@ -1,5 +1,5 @@
 import './App.css';
-import {CaixaTextoNome, CaixaTexto} from './Componentes/Componentes.js'
+import {Nomes, Textos} from './Componentes/Componentes.js'
 
 function App() {
   return (
@@ -8,8 +8,9 @@ function App() {
         <h1> WhatsLab </h1>
       </header>
       <section>
-        <CaixaTextoNome></CaixaTextoNome>
-        <CaixaTexto type="text" name="name"></CaixaTexto>
+        <Nomes></Nomes>
+        <Textos></Textos>
+        
         <button>Enviar</button>
       </section>
     </div>

@@ -1,43 +1,59 @@
-import React from "react";
+import React, { Component } from 'react'
 
-export class CaixaTextoNome extends React.Component {
+export class Nomes extends Component {
     state = {
-        inputName: ""
+        nome: [],
+        nomeDoUsuario:''
     }
 
-    recebeNome = (event) => {
-        this.setState({
-            inputName: event.target.value
-        })
+    adicionaNome = () => {
+        const arrayNome = [...this.state.nome]
+        arrayNome.push(this.state.nomeDoUsuario)
+        this.setState({ nome: arrayNome })
     }
 
-    render() {
+    insereNomeUsuario = (event) => {
+        this.setState({ nomeDoUsuario: event.target.value })
+    }
+
+render() {
+        const listaNome = this.state.nome.map((umNome, index) => {
         return (
-            <div className="App">
-                <p>{this.state.inputName}</p>
-                <input value={this.state.inputName} onChange={this.recebeNome} />
-            </div>
+        <li key={index}>{umNome}</li>
         )
-    }
+    })
+    return (
+        <input value={this.state.nomeDoUsuario} onChange={this.adicionaNome} className="digitarNome"/>
+    )
+}
 }
 
-export class CaixaTexto extends React.Component {
+
+export class Textos extends Component {
     state = {
-        inputName: ""
+        texto: ['texto'],
+        textoDigitado: ''
     }
 
-    recebeTexto = (event) => {
-        this.setState({
-            inputText: event.target.value
-        })
+    adicionaTexto = () => {
+        const arrayTexto = [...this.state.texto] //cria novo array
+        arrayTexto.push(this.state.textoDigitado)
+        this.setState({ texto: arrayTexto, textoDigitado: '' }) //reset automático no input
     }
 
-    render() {
+    insereTextoUsuario = (event) => {
+        this.setState({ textoDigitado: event.target.value })
+    }
+
+render() {
+    console.log(this.state.textoDigitado)
+    const listaTexto = this.state.texto.map((umTexto, index) => {
         return (
-            <div className="App">
-                <p>{this.state.inputText}</p>
-                <input value={this.state.inputText} onChange={this.recebeTexto} />
-            </div>
+        <li key={index}>{umTexto}</li>
         )
-    }
+    })
+    return (
+        <input className='digitarTexto'/>
+    )
+}
 }

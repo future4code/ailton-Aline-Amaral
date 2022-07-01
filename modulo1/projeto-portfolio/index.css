@@ -1,0 +1,93 @@
+* {
+    margin: 4px;
+}
+
+.navigator {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.45);
+}
+.navigator:hover {
+    color: aliceblue;
+}
+.navigator:active {
+    color: rgb(0, 255, 0);
+}
+
+.head {
+    display: flex;
+    width:auto;
+    font-size: 45px;
+    font-family: verdana;
+    margin-bottom: 10px;
+    font-weight: bold;
+    background-color: black;
+    border-radius: left 50px;
+}
+
+.profilePic {
+    display: inline-flex;
+    height: 30vh;
+    margin: 4vh;
+    border:solid rgb(0, 255, 0) 5px;
+    border-radius: 50%;
+}
+    
+.name {
+    text-align: center;
+    color: rgb(0, 255, 0);
+
+}
+body {
+    display: block;
+    color: #fff;
+    font: normal 16px/24px DINPro-Regular,Sans-Serif,Trebuchet,Helvetica,Arial,sans-serif;
+    background-color: #252525;
+}
+
+.aboutMe {
+    display: block;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+form {
+    margin: auto;
+    width: 50%;
+    display: block;
+    position: relative;
+    
+
+}
+
+.id {
+    background-color: lightslategray;
+    color: rgb(0, 255, 0);
+}
+
+.link-imgs {
+    width: 50px;
+}
+
+footer {
+    display: inline;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+
+#button {
+    background-color: #252525;
+    color: rgb(255, 255, 255);
+    border: 2px solid #4CAF50;
+    font-family: normal 16px/24px DINPro-Regular,Sans-Serif,Trebuchet,Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    padding: 4px 50px;
+    border-radius: 12px;
+}
+#button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+#button:active {
+    color: rgb(0, 255, 0);
+}
